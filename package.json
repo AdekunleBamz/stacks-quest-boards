@@ -1,0 +1,45 @@
+{
+  "name": "stacks-quest-boards",
+  "version": "1.0.0",
+  "description": "A Stacks blockchain-based quest board platform with gamification, smart contracts, and reward systems",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "stacks-quest-boards"
+  ],
+  "scripts": {
+    "install:all": "npm install && cd frontend && npm install && cd ../stacks-quest-boards && npm install",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build:frontend": "cd frontend && npm run build",
+    "test:contracts": "cd stacks-quest-boards && npm test",
+    "test:all": "cd stacks-quest-boards && npm run test:report",
+    "lint:frontend": "cd frontend && npm run lint",
+    "clarinet:check": "cd stacks-quest-boards && clarinet check",
+    "clarinet:test": "cd stacks-quest-boards && clarinet test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdekunleBamz/stacks-quest-boards.git"
+  },
+  "keywords": [
+    "stacks",
+    "blockchain",
+    "clarity",
+    "quest-boards",
+    "gamification",
+    "smart-contracts",
+    "rewards",
+    "defi",
+    "nextjs",
+    "react"
+  ],
+  "author": "Adekunle Bamz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdekunleBamz/stacks-quest-boards/issues"
+  },
+  "homepage": "https://github.com/AdekunleBamz/stacks-quest-boards#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

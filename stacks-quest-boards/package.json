@@ -1,17 +1,43 @@
 
 {
-  "name": "stacks-quest-boards-tests",
+  "name": "stacks-quest-boards-contracts",
   "version": "1.0.0",
-  "description": "Run unit tests on this project.",
-  "type": "module",
+  "description": "Smart contracts for Stacks blockchain-based quest boards with gamification and reward distribution",
   "private": true,
   "scripts": {
+    "install:all": "npm install",
     "test": "vitest run",
+    "test:watch": "chokidar \"tests/**/*.ts\" \"contracts/**/*.clar\" -c \"npm run test:report\"",
     "test:report": "vitest run -- --coverage --costs",
-    "test:watch": "chokidar \"tests/**/*.ts\" \"contracts/**/*.clar\" -c \"npm run test:report\""
+    "clarinet:check": "clarinet check",
+    "clarinet:test": "clarinet test",
+    "clarinet:console": "clarinet console"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdekunleBamz/stacks-quest-boards.git",
+    "directory": "stacks-quest-boards"
+  },
+  "keywords": [
+    "stacks",
+    "clarity",
+    "blockchain",
+    "quest-boards",
+    "gamification",
+    "smart-contracts",
+    "rewards",
+    "defi"
+  ],
+  "author": "Adekunle Bamz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdekunleBamz/stacks-quest-boards/issues"
+  },
+  "homepage": "https://github.com/AdekunleBamz/stacks-quest-boards#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "type": "module",
   "dependencies": {
     "@stacks/clarinet-sdk": "^3.9.0",
     "@stacks/transactions": "^7.2.0",

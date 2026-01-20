@@ -1,12 +1,41 @@
 {
-  "name": "frontend",
+  "name": "stacks-quest-boards-frontend",
   "version": "0.1.0",
+  "description": "A Next.js frontend application for Stacks blockchain-based quest boards with gamification and reward systems",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "type-check": "tsc --noEmit",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdekunleBamz/stacks-quest-boards.git",
+    "directory": "frontend"
+  },
+  "keywords": [
+    "stacks",
+    "blockchain",
+    "nextjs",
+    "react",
+    "web3",
+    "quest-boards",
+    "gamification",
+    "typescript"
+  ],
+  "author": "Adekunle Bamz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdekunleBamz/stacks-quest-boards/issues"
+  },
+  "homepage": "https://github.com/AdekunleBamz/stacks-quest-boards#readme",
+  "engines": {
+    "node": ">=18.0.0"
   },
   "dependencies": {
     "next": "16.0.7",
